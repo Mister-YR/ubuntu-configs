@@ -1,2 +1,2 @@
-# ubuntu-conofigs
+# ubuntu-configs
 store configs my home-lab
