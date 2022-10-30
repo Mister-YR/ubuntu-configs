@@ -1,0 +1,41 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: local-storage
+  uid: fd859bf0-55c7-428a-8c0a-db81be8396b9
+  resourceVersion: '17717'
+  creationTimestamp: '2022-10-30T14:18:17Z'
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: >
+      {"apiVersion":"storage.k8s.io/v1","kind":"StorageClass","metadata":{"annotations":{},"name":"local-storage"},"provisioner":"kubernetes.io/no-provisioner","volumeBindingMode":"WaitForFirstConsumer"}
+    storageclass.kubernetes.io/is-default-class: 'true'
+  managedFields:
+    - manager: kubectl-client-side-apply
+      operation: Update
+      apiVersion: storage.k8s.io/v1
+      time: '2022-10-30T14:18:17Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:provisioner: {}
+        f:reclaimPolicy: {}
+        f:volumeBindingMode: {}
+    - manager: node-fetch
+      operation: Update
+      apiVersion: storage.k8s.io/v1
+      time: '2022-10-30T14:35:25Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            f:storageclass.kubernetes.io/is-default-class: {}
+  selfLink: /apis/storage.k8s.io/v1/storageclasses/local-storage
+allowedTopologies: []
+mountOptions: []
+parameters: {}
+provisioner: kubernetes.io/no-provisioner
+reclaimPolicy: Delete
+volumeBindingMode: WaitForFirstConsumer
