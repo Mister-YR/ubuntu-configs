@@ -1,2 +1,2 @@
 # ubuntu-configs
-store configs my home-lab
+Some Ubuntu configs from home-lab
